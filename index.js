@@ -13,13 +13,13 @@ CONNECTDB(process.env.MONGODB_URL);
 app.use(express.json());
 
 //routers
-app.use('/api/user',UserRoute);
+app.use('/api/user', UserRoute);
 
-//errorhandler middleware
+
 app.use(ErrorHandler);
 
 
 //listening
-app.listen(PORT,()=>{
+app.listen(PORT, () => {
     console.log("our server is running");
 });
